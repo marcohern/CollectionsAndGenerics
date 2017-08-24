@@ -52,7 +52,7 @@ namespace Collections.List
             {
                 if (user==null)
                 {
-                    Console.WriteLine(string.Format("| {0,20} | {1,6} | {2,2} |", "NULL", Gender.None, 0));
+                    Console.WriteLine(string.Format("| {0,20} | {1,6} | {2,2} |", "NULL", Gender.Unknown, 0));
                 } else
                 {
                     Console.WriteLine(string.Format("| {0,20} | {1,6} | {2,2} |", user.Name, user.Gender, user.Age));

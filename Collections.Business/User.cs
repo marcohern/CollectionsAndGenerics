@@ -14,11 +14,15 @@ namespace Collections.Business
 
         public Gender Gender { get; set; }
 
+
+
+        //Non-generic compare
         public int CompareTo(object obj)
         {
             return this.CompareTo((User)obj);
         }
 
+        //Generic compare
         public int CompareTo(User other)
         {
             int c = Name.CompareTo(other.Name);
@@ -33,14 +37,17 @@ namespace Collections.Business
             return c;
         }
 
+
+
+        //sample of users
         public static User[] GetUserArray()
         {
             return new User[] {
-                new User{ Name="Marco Hernandez", Age=37, Gender=Gender.Male },
-                new User{ Name="Ken Oathcairn", Age=42, Gender=Gender.Male },
+                new User{ Name="Marco Hernandez"   , Age=37, Gender=Gender.Male   },
+                new User{ Name="Ken Oathcairn"     , Age=42, Gender=Gender.Male   },
                 new User{ Name="Christine La'Guard", Age=55, Gender=Gender.Female },
-                new User{ Name="Slavoy Zizek", Age=62, Gender=Gender.Male },
-                new User{ Name="Robert Foster", Age=32, Gender=Gender.Male },
+                new User{ Name="Slavoy Zizek"      , Age=62, Gender=Gender.Male   },
+                new User{ Name="Robert Foster"     , Age=32, Gender=Gender.Male   },
             };
         }
     }
