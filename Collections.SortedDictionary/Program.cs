@@ -16,7 +16,7 @@ namespace Collections.SortedDictionary
                 users[user.Name] = user;
                 //users.Add(user.Name, user);
             }
-            // O(1)
+            // O(1logN
             //users["Ken Oathcairn"].Age = 50;
 
             // O(1)

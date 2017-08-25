@@ -34,7 +34,7 @@ namespace Collections.List
             Console.WriteLine(string.Format("Added! Capacity:{0}, Count: {1}", users.Capacity, users.Count));
 
             users.Add(null);
-            Console.WriteLine(string.Format("Added! Capacity:{0}, Count: {1}", users.Capacity, users.Count));
+            Console.WriteLine(string.Format("Added NULL! Capacity:{0}, Count: {1}", users.Capacity, users.Count));
 
             Console.WriteLine("USER LIST:");
 

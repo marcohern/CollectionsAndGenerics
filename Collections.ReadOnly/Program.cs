@@ -24,7 +24,6 @@ namespace Collections.ReadOnly
             Console.WriteLine();
 
             users.Add(new User { Name = "Uma Thurman", Gender = Gender.Female, Age = 39 });
-
             Console.WriteLine("READ ONLY AFTER INSERTING:");
             foreach (var u in rusers)
             {
